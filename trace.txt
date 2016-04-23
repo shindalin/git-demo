@@ -1,0 +1,38 @@
+git rev-parse --no-revs --no-flags master 
+fatal: ambiguous argument 'master': unknown revision or path not in the working tree.
+Use '--' to separate paths from revisions, like this:
+'git <command> [<revision>...] -- [<file>...]'
+git rev-parse --flags --no-revs master 
+git rev-parse --symbolic --revs-only master 
+git rev-parse --git-dir --is-inside-work-tree --show-cdup --show-prefix HEAD --symbolic-full-name HEAD 
+fatal: ambiguous argument 'HEAD': unknown revision or path not in the working tree.
+Use '--' to separate paths from revisions, like this:
+'git <command> [<revision>...] -- [<file>...]'
+git config --list 
+git rev-parse HEAD --symbolic-full-name HEAD 
+fatal: ambiguous argument 'HEAD': unknown revision or path not in the working tree.
+Use '--' to separate paths from revisions, like this:
+'git <command> [<revision>...] -- [<file>...]'
+git ls-remote .git 
+git log --encoding=UTF-8 --topo-order --date=raw --parents --no-color --pretty=format:commit %m %H %P%x00%an <%ae> %ad%x00%s -- master 
+git status --porcelain -z --untracked-files=no 
+fatal: your current branch 'master' does not have any commits yet
+git rev-parse --no-revs --no-flags master 
+fatal: ambiguous argument 'master': unknown revision or path not in the working tree.
+Use '--' to separate paths from revisions, like this:
+'git <command> [<revision>...] -- [<file>...]'
+git rev-parse --flags --no-revs master 
+git rev-parse --symbolic --revs-only master 
+git rev-parse --git-dir --is-inside-work-tree --show-cdup --show-prefix HEAD --symbolic-full-name HEAD 
+fatal: ambiguous argument 'HEAD': unknown revision or path not in the working tree.
+Use '--' to separate paths from revisions, like this:
+'git <command> [<revision>...] -- [<file>...]'
+git config --list 
+git rev-parse HEAD --symbolic-full-name HEAD 
+fatal: ambiguous argument 'HEAD': unknown revision or path not in the working tree.
+Use '--' to separate paths from revisions, like this:
+'git <command> [<revision>...] -- [<file>...]'
+git ls-remote .git 
+git log git--encoding=UTF-8 status  --topo-order--porcelain  -z--date=raw  --untracked-files=no--parents  
+--no-color --pretty=format:commit %m %H %P%x00%an <%ae> %ad%x00%s -- master 
+fatal: your current branch 'master' does not have any commits yet
